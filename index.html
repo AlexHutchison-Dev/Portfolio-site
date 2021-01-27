@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Hutchison - Full Stack Developer</title>
     <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@100;300;400;700&family=Rock+Salt&display=swap"
       rel="stylesheet"
@@ -12,8 +19,47 @@
   </head>
   <body>
     <main>
+      <!-------- Nav -------->
+
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#landing">Alex Hutchison</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#landing"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-------- Landing Page -------->
       <section class="landing">
-        <nav>
+        <!-- <nav>
           <div class="logo-container">
             <h1 id="logo" class="heading">
               <a href="/index.html">Alex Hutchison</a>
@@ -25,10 +71,58 @@
             <li><a href="/hobbies.html">Hobbies</a></li>
             <li><a href="/contact.html">Contact</a></li>
           </ul>
-        </nav>
-        <div class="title">
-          <h2 id="name" class="heading">Alex Hutchison</h2>
-          <h3 id="developer">Full Stack Developer</h3>
+        </nav> -->
+        <div class="landing-container">
+          <div class="title">
+            <div class="row">
+              <div class="col-12" align="center">
+                <div class="row">
+                  <div class="col-12" align="center">
+                    <h2 class="name">Alex Hutchison</h2>
+                  </div>
+                  <div class="col-12 my-3">
+                    <h3 class="developer">Full Stack Developer</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------- About -------->
+
+      <section id="about">
+        <div class="about-container container-fluid">
+          <div class="row">
+            <div class="col-md-4" align="center">
+              <img
+                class="about-image"
+                src="./images/me-web.jpg"
+                alt="Picture of man in front of waterfall"
+              />
+            </div>
+            <div class="col-md-8" align="center">
+              <div class="row">
+                <div class="col">
+                  <h1>About Me</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="about-text">
+                    <p>
+                      lorem ipsum dolor sit amet, consectet lorem ipsum dolor,
+                      sed diam nonumy ut et lorem. Ut enim ad minim veniam.
+                      lorem ipsum dolor sit amet, consectet lorem ipsum dolor,
+                      sed diam nonumy ut et lorem. Ut enim ad minim veniam.
+                      Lorem ipsum dolor sit amet, consectet lorem ipsum dolor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -45,7 +139,21 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
