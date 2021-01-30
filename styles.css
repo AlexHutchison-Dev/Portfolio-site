@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -14,17 +17,27 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 100 !important;
-  color: #8A2BE2 !important;
+  font-size: 3.5rem !important;
+  color: #8a2be2 !important;
   margin: 20px !important;
 }
+/* p {
+  font-size: 1.3rem;
+} */
 
+.section-heading {
+  margin: 20px 20px 40px 20px !important;
+}
+
+.alt {
+  color: white !important;
+}
 /* ----------   Nav   ----------*/
 
 .navbar-brand {
   font-family: "Rock Salt", cursive;
-  color: #8A2BE2 !important;
+  color: #8a2be2 !important;
   text-shadow: 1px 1px 2px black;
-
 }
 @media only screen and (max-width: 768px) {
   .navbar-brand {
@@ -34,15 +47,13 @@ h1 {
 }
 .nav-link {
   font-weight: bold !important;
-  
 }
 .active [class*="nav-link"] {
-  color: #8A2BE2 !important;
+  color: #8a2be2 !important;
 }
 
 .active {
-  border-bottom: 2px solid #8A2BE2 !important;
-  
+  border-bottom: 2px solid #8a2be2 !important;
 }
 /* ----------   Landing   ----------*/
 .landing-container {
@@ -58,7 +69,6 @@ h1 {
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 48px);
-  margin: auto !important;
 }
 .title-container {
   height: 100%;
@@ -69,13 +79,13 @@ h1 {
   font-family: "Rock Salt", cursive;
   color: white;
   text-shadow: 4px 4px 5px black;
+  margin-top: -5vh;
 }
 .developer {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
-  color: #8A2BE2;
+  color: #8a2be2;
   text-shadow: 1px 1px 2px white;
-
 }
 
 /* ----------   About   ----------*/
@@ -86,37 +96,63 @@ h1 {
 
 .about-image {
   max-height: 250px;
-  border: 2px solid #8A2BE2;
+  border: 2px solid #8a2be2;
   border-radius: 100%;
+  box-shadow: 3px 3px 5px #555;
 }
 
 .about-text {
   padding: 3% 10%;
 }
 
+/* ----------   Skills   ----------*/
 
-
-
-
-
-/* ----------   About   ----------*/
-
-
-
-
-
-
-
-#logo {
-  font-size: 1.2rem;
+.skills-container {
+  background-color: #79A1C9;
+  padding: 10vh 5vw !important;
 }
-#logo a {
-  color: white;
+
+.skills-content {
+  margin-top: 6vh;
 }
-#logo :hover {
-  color: yellow;
-  font-size: 1.4rem;
+
+.heading-alt {
+  color:#1D324F !important;
 }
+
+.skills-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.table {
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px #555;
+  min-width: 240px;
+}
+
+.table-headings {
+  color: white !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 100 !important;
+  border-bottom: 2px solid green !important;
+}
+
+/* ----------   projects   ----------*/
+
+.projects-container {
+  min-height: 400px;
+}
+
+/* ----------   Intro   ----------*/
 
 .intro {
   background-color: black;
@@ -152,5 +188,3 @@ h1 {
 .hide-text {
   color: white;
 }
-
-/*----------    NavBar  ------------ */
