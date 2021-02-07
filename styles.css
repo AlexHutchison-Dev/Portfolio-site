@@ -108,8 +108,8 @@ h1 {
 /* ----------   Skills   ----------*/
 
 .skills-container {
-  background-color: #79A1C9;
-  padding: 10vh 5vw !important;
+  background-color: #79a1c9;
+  padding: 3% 7% 15% !important;
 }
 
 .skills-content {
@@ -117,7 +117,7 @@ h1 {
 }
 
 .heading-alt {
-  color:#1D324F !important;
+  color: #1d324f !important;
 }
 
 .skills-text {
@@ -150,6 +150,37 @@ h1 {
 
 .projects-container {
   min-height: 400px;
+  padding: 3% 7% 15%;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+.card {
+  max-width: 300px;
+  min-height: 200px;
+  margin: 20px;
+  box-shadow: 2px 2px 5px #555;
+  /* background-image: url("https://recordit.co/wrXNPEQjw3");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.card-button {
+  margin: 7% 1% 0;
+  color: #8a2be2 !important;
+
+}
+.card-button a {
+  color: #8a2be2 ;
+}
+.card-button a:hover{
+  color:  #79a1c9;
+}
+
+hr.card-hr {
+  border-top: 2px solid #8a2be2;
+  margin-top: 0;
 }
 
 /* ----------   Intro   ----------*/
