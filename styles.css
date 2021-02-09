@@ -13,6 +13,8 @@ a {
 body {
   color: #555;
   font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width:100%;
 }
 h1 {
   font-family: "Roboto", sans-serif;
@@ -20,6 +22,26 @@ h1 {
   font-size: 3.5rem !important;
   color: #8a2be2 !important;
   margin: 20px !important;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100 !important;
+  font-size: 3.5rem !important;
+  color: #8a2be2 !important;
+  margin: 10px !important;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100 !important;
+  margin-bottom: 10px !important;
+  margin-top: -15px !important;
+  color: #555;
+}
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100 !important;
+  margin-bottom: 15px !important;
+  color: #555;
 }
 /* p {
   font-size: 1.3rem;
@@ -82,7 +104,8 @@ h1 {
   margin-top: -5vh;
 }
 .developer {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
   font-size: 3rem;
   color: #8a2be2;
   text-shadow: 1px 1px 2px white;
@@ -93,7 +116,12 @@ h1 {
 .about-container {
   padding: 10vh 5vw !important;
 }
-
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .about-image {
   max-height: 250px;
   border: 2px solid #8a2be2;
@@ -162,20 +190,16 @@ h1 {
   min-height: 200px;
   margin: 20px;
   box-shadow: 2px 2px 5px #555;
-  /* background-image: url("https://recordit.co/wrXNPEQjw3");
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 .card-button {
   margin: 7% 1% 0;
   color: #8a2be2 !important;
-
 }
 .card-button a {
   color: #8a2be2 ;
 }
 .card-button a:hover{
-  color:  #79a1c9;
+  color:  #4ca2cd;
 }
 
 hr.card-hr {
@@ -218,4 +242,71 @@ hr.card-hr {
 }
 .hide-text {
   color: white;
+}
+
+/* ----------   Modal   ----------*/
+
+.modal {
+  overflow-y: scroll !important;
+}
+#modal-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 100;
+  position: fixed;
+  top:0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#mern-modal {
+  display: none; 
+}
+#jane-modal {
+  display: none; 
+}
+#flask-modal {
+  display: none; 
+}
+#speller-modal {
+  display: none; 
+}
+.modal-content {
+  width: 60vw !important;
+  height: 80vh !important;
+  background-color: white;
+  z-index: 110;
+}
+
+.close-button { 
+  display: block;
+  padding: 2px !important;
+  color: white;
+  width: 30px;
+  border-radius: 100% !important;
+  transform: rotate(45deg) !important;
+  position: relative;
+  top: 2% !important;
+  left: 95% !important;
+  box-shadow: 2px 2px 2px #555;
+  z-index: 110;
+}
+
+.close-button:hover {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .modal-content {
+    width: 85vw !important;
+    height: 85vh;
+  }
+
+  .close-button {
+    top: 2% !important;
+    left: 95% !important;
+  }
 }

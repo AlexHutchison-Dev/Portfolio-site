@@ -82,29 +82,32 @@
         <div class="about-container container-fluid">
           <div class="row">
             <div class="col-md-4" align="center">
-              <img
-                class="about-image"
-                src="./images/me-web.jpg"
-                alt="Picture of man in front of waterfall"
-              />
+              <div class="image-container">
+                <img
+                  class="about-image"
+                  src="./images/me-web.jpg"
+                  alt="Picture of man in front of waterfall"
+                />
+              </div>
             </div>
             <div class="col-md-8" align="center">
               <div class="row">
                 <div class="col">
-                  <h1>About Me</h1>
+                  <h1>About Me</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
                   <div class="about-text">
-                    <p>Hi im Alex</p>
-                    <br />
+                    <h4>Hi I'm Alex</h4>
+                    <h6>A self-taught full-stack web developer.</h6>
                     <p>
-                      lorem ipsum dolor sit amet, consectet lorem ipsum dolor,
-                      sed diam nonumy ut et lorem. Ut enim ad minim veniam.
-                      lorem ipsum dolor sit amet, consectet lorem ipsum dolor,
-                      sed diam nonumy ut et lorem. Ut enim ad minim veniam.
-                      Lorem ipsum dolor sit amet, consectet lorem ipsum dolor.
+                      I make websites and web apps. I have lately been working
+                      with the MERN stack, but have also crafted apps using
+                      Flask, Vue, and websites with HTML, CSS, and vanilla
+                      JavaScript. When not at my computer, I am mostly busy
+                      parenting my wonderful twins. The down time I get I love
+                      to spend outside, hiking, mountain biking, or camping.
                     </p>
                   </div>
                 </div>
@@ -204,7 +207,7 @@
       <section id="projects">
         <div class="projects-container" align="center">
           <h1>Projects</h1>
-          <div class="cards-container">
+          <div class="cards-container" id="cards-container">
             <div class="row">
               <div class="card">
                 <video autoplay="autoplay" loop>
@@ -236,8 +239,17 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <button class="btn btn-sm card-button"><a href="https://github.com/AlexHutchison-Dev/Mern-Calendar" target="_blank" rel="noopener noreferrer">More Info</a></button>
-                      <button class="btn btn-sm card-button">Git Repo</button>
+                      <button class="btn btn-sm card-button" name="mern-modal">
+                        More Info
+                      </button>
+                      <button class="btn btn-sm card-button">
+                        <a
+                          href="https://github.com/AlexHutchison-Dev/Mern-Calendar"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Git Repo</a
+                        >
+                      </button>
                       <button class="btn btn-sm card-button">Live Site</button>
                     </div>
                   </div>
@@ -246,7 +258,10 @@
 
               <div class="card">
                 <video autoplay="autoplay" loop>
-                  <source src="./video/browser-extension-demo.mp4" type="video/mp4" />
+                  <source
+                    src="./video/browser-extension-demo.mp4"
+                    type="video/mp4"
+                  />
                 </video>
                 <div class="card-body">
                   <hr class="card-hr" />
@@ -274,8 +289,17 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <button class="btn btn-sm card-button">More Info</button>
-                      <button class="btn btn-sm card-button">Git Repo</button>
+                      <button class="btn btn-sm card-button" name="jane-modal">
+                        More Info
+                      </button>
+                      <button class="btn btn-sm card-button">
+                        <a
+                          href="https://github.com/AlexHutchison-Dev/Jane-Local-Pricing-Extension"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Git Repo</a
+                        >
+                      </button>
                       <button class="btn btn-sm card-button">Store Page</button>
                     </div>
                   </div>
@@ -318,8 +342,17 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <button class="btn btn-sm card-button">More Info</button>
-                      <button class="btn btn-sm card-button">Git Repo</button>
+                      <button class="btn btn-sm card-button" name="flask-modal">
+                        More Info
+                      </button>
+                      <button class="btn btn-sm card-button">
+                        <a
+                          href="https://github.com/AlexHutchison-Dev/Finance"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Git Repo</a
+                        >
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -358,7 +391,12 @@
                   </div>
                   <div class="row">
                     <div class="col-12">
-                      <button class="btn btn-sm card-button">More Info</button>
+                      <button
+                        class="btn btn-sm card-button"
+                        name="speller-modal"
+                      >
+                        More Info
+                      </button>
                       <button class="btn btn-sm card-button">Git Repo</button>
                     </div>
                   </div>
@@ -382,6 +420,33 @@
         </h1>
         <h1 class="hide"><span class="hide-text">Live. Learn"</span></h1>
         <h1 class="hide hlovate"><span class="hide-text">-Hlovate</span></h1>
+      </div>
+    </div>
+
+    <!-- Project Modals -->
+    
+    <div class="bg-modal" id="modal-bg" style="display: none">
+      <div class="modal modal-content" id="mern-modal" style="display: none">
+        <button class="btn btn-danger close-button" name="mern-modal">+</button>
+        <h1>Mern</h1>
+      </div>
+      <div class="modal modal-content" id="jane-modal" style="display: none">
+        <button class="btn btn-danger close-button" name="jane-modal">+</button>
+        <h1>Jane</h1>
+      </div>
+
+      <div class="modal modal-content" id="flask-modal" style="display: none">
+        <button class="btn btn-danger close-button" name="flask-modal">
+          +
+        </button>
+        <h1>Flask</h1>
+        <div style="min-height: 400px"></div>
+      </div>
+      <div class="modal modal-content" id="speller-modal" style="display: none">
+        <button class="btn btn-danger close-button" name="speller-modal">
+          +
+        </button>
+        <h1>speller</h1>
       </div>
     </div>
 
